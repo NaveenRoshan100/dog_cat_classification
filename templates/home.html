@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog vs Cat Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <div class="card animate-pop-in">
+        <h1>DOG AND CAT CLASSIFICATION</h1>
+        <form action="/result" method="post" enctype="multipart/form-data">
+            <label for="image">Choose an Image:</label>
+            <input type="file" name="user_images" accept="image/*" required>
+            <input type="submit" value="Submit Image">
+        </form>
+    </div>
+</body>
+</html>
